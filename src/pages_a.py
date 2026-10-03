@@ -68,7 +68,7 @@ def home(arts, jobs):
 <div class="grid g3">{specs}</div></div></section>
 
 <section class="sec white"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>05 / Why Windward</p><h2 class="h2" data-reveal>The details<br><span class="second">make the difference.</span></h2><p class="body" data-reveal>Six reasons firms trust us with the hires that matter most.</p><div class="actions" data-reveal><a class="btn" href="/employers/">Discuss your search {ARROW}</a></div></div>
+<div class="head stick"><p class="lab" data-reveal>05 / Why Windward</p><h2 class="h2" data-reveal>The details<br><span class="second">make the difference.</span></h2><p class="body" data-reveal>Six reasons firms trust us with the hires that matter most.</p><div class="actions" data-reveal><a class="btn" href="/employers/">Discuss your search {ARROW}</a></div></div>
 <ul class="rows">{reasons}</ul></div></section>
 
 <section class="sec"><div class="wrap split">

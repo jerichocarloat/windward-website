@@ -164,7 +164,7 @@ def cta_band(l1='Let’s move forward,', l2='together.', text='A critical hire o
 def faq_block(items=FAQ, dark=False, title1='A little clarity', title2='before we begin.'):
     acc = ''.join(f'''<div class="acc-item" data-reveal style="--i:{i}"><h3><button class="acc-q" type="button" aria-expanded="false" aria-controls="faq{i}"><span><span class="num">{i+1:02d}</span>{e(q)}</span><span class="pm" aria-hidden="true"></span></button></h3><div class="acc-a" id="faq{i}" role="region"><div><div class="in body">{a}</div></div></div></div>''' for i, (q, a) in enumerate(items))
     return f'''<section class="sec{" dark" if dark else ""}"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>Questions and answers</p><h2 class="h2" data-reveal>{title1}<br><span class="second">{title2}</span></h2>
+<div class="head stick"><p class="lab" data-reveal>Questions and answers</p><h2 class="h2" data-reveal>{title1}<br><span class="second">{title2}</span></h2>
 <p class="body" data-reveal>Still have a question? Call us on <a class="tlink" href="tel:{PHONE}">{PHONE}</a></p></div>
 <div class="acc">{acc}</div></div></section>'''
 

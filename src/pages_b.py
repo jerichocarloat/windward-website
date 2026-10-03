@@ -69,10 +69,10 @@ def employers():
 <div class="grid g3">{specs.replace('class="spec"','class="spec" style="background:var(--fog)"')}</div></div></section>
 <section class="sec dark"><div class="wrap"><div class="head row"><div class="head" style="margin:0"><p class="lab" data-reveal>How a search works</p><h2 class="h2" data-reveal>Four steps.<br><span class="second">No surprises.</span></h2></div><a class="btn ghost" href="#search" data-reveal>Start a search {ARROW}</a></div><div class="grid g4">{proch}</div></div></section>
 <section class="sec"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>Why Windward</p><h2 class="h2" data-reveal>What a focused search<br><span class="second">brings to your firm.</span></h2><p class="body" data-reveal>Six reasons firms trust us with the hires that matter most.</p></div>
+<div class="head stick"><p class="lab" data-reveal>Why Windward</p><h2 class="h2" data-reveal>What a focused search<br><span class="second">brings to your firm.</span></h2><p class="body" data-reveal>Six reasons firms trust us with the hires that matter most.</p></div>
 <ul class="rows">{reasons}</ul></div></section>
 <section class="sec white" id="search"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>Search request</p><h2 class="h2" data-reveal>Tell us what<br><span class="second">you need.</span></h2><p class="body" data-reveal>The more context you share, the faster we can help. Everything you send is treated in confidence.</p>
+<div class="head stick"><p class="lab" data-reveal>Search request</p><h2 class="h2" data-reveal>Tell us what<br><span class="second">you need.</span></h2><p class="body" data-reveal>The more context you share, the faster we can help. Everything you send is treated in confidence.</p>
 <ul class="blist small" data-reveal><li>{DIAM}A specialist replies within one business day</li><li>{DIAM}Engaged search options for critical hires</li><li>{DIAM}Market and compensation insight included</li></ul>
 <p class="small" data-reveal>Prefer to talk? <a class="tlink" href="/contact/">Book a 30-minute call</a> or call <a class="tlink" href="tel:{PHONE}">{PHONE}</a></p></div>
 <div data-reveal>{employer_form()}</div></div></section>
@@ -88,7 +88,7 @@ def candidates(jobs):
     body = intro('For candidates', 'Find a role', 'worth moving for.', 'For advisors, planners and wealth management professionals. Whether you are actively looking or simply curious, share your résumé in confidence and we will match you with roles that fit your goals.', f'<a class="btn" href="#submit">Submit your résumé {ARROW}</a><a class="btn line" href="/jobs/">See {len(jobs)} open jobs</a>', [('Home', '/'), ('Candidates', None)]) + f'''
 <section class="sec" style="padding-top:8px"><div class="wrap"><div class="grid g3">{tips}</div></div></section>
 <section class="sec white" id="submit"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>Submit your résumé</p><h2 class="h2" data-reveal>Tell us where<br><span class="second">you want to go.</span></h2><p class="body" data-reveal>A recruiter who specializes in your field reviews every submission personally.</p>
+<div class="head stick"><p class="lab" data-reveal>Submit your résumé</p><h2 class="h2" data-reveal>Tell us where<br><span class="second">you want to go.</span></h2><p class="body" data-reveal>A recruiter who specializes in your field reviews every submission personally.</p>
 <div class="pic ratio-43" data-reveal style="margin-top:8px"><img src="/assets/img/walk-briefcase.jpg" alt="A professional walking to work with a briefcase" loading="lazy"></div></div>
 <div data-reveal>{candidate_form()}</div></div></section>
 {faq_block()}{cta_band()}'''
@@ -106,7 +106,7 @@ def contact():
 <div class="book-cal" data-reveal style="--i:2" data-cal="{CAL}"><div class="cal-fallback">{ic("Calendar",36,"")}<p class="h3">Pick a time that works for you.</p><p class="small">Our calendar opens in a new tab. It takes under a minute.</p><a class="btn light" href="{CAL}" target="_blank" rel="noopener">Open the calendar {ARROW}</a></div></div>
 </div></div></section>
 <section class="sec white" id="forms"><div class="wrap split">
-<div class="head" style="position:sticky;top:calc(var(--header) + 24px)"><p class="lab" data-reveal>Prefer to write?</p><h2 class="h2" data-reveal>Send us the details.<br><span class="second">We reply within a day.</span></h2><p class="body" data-reveal>Share a hiring need, your résumé or a question. Every message is read by a specialist and treated in confidence.</p>
+<div class="head stick"><p class="lab" data-reveal>Prefer to write?</p><h2 class="h2" data-reveal>Send us the details.<br><span class="second">We reply within a day.</span></h2><p class="body" data-reveal>Share a hiring need, your résumé or a question. Every message is read by a specialist and treated in confidence.</p>
 <p class="small" data-reveal>Follow us on <a class="tlink" href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn</a> for jobs and market insight.</p></div>
 <div data-reveal><div class="tabs" role="tablist" aria-label="Choose a form">
 <button role="tab" id="t-hire" aria-controls="p-hire" aria-selected="true" data-hash="hire">Looking to hire?</button><button role="tab" id="t-work" aria-controls="p-work" aria-selected="false" tabindex="-1" data-hash="work">Looking for work?</button><button role="tab" id="t-other" aria-controls="p-other" aria-selected="false" tabindex="-1" data-hash="message">Something else</button></div>

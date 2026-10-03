@@ -461,3 +461,12 @@ h1,h2,.h1,.h2,.h3,.display,.proof-t,.sra-t{text-wrap:balance}
 .pillar .h3{min-height:2.36em}
 @media (max-width:640px){.pillar .h3{min-height:0}}
 @media (min-width:1700px){.ctaband .bg{left:calc(50vw + min(50vw - var(--gutter), var(--max) / 2) - 170px - var(--bw) * .715)}}
+/* side headings stay in view next to long lists, only where there is a side column */
+@media (min-width:1025px){.stick{position:sticky;top:calc(var(--header) + 24px);align-self:start}}
+@media (max-width:640px){.rows > li,.rows > a,.split .rows > li,.split .rows > a{grid-template-columns:1fr;row-gap:10px}.rows > li > :nth-child(3),.rows > a > :nth-child(3),.split .rows > li > :nth-child(3){grid-column:auto}}
+/* comfortable tap targets on touch screens (44px rows) */
+@media (pointer:coarse){
+  .ftr ul li{margin:0}.ftr ul a{display:inline-flex;align-items:center;min-height:44px}
+  .ftr .bot a,.crumbs a,.mnav .mfoot a.lab{display:inline-flex;align-items:center;min-height:44px}
+  .crumbs{align-items:center}
+}
